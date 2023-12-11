@@ -1,0 +1,35 @@
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+.navbar{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff;
+  color: #242424;
+  text-decoration: none;
+}
+.navbar a{
+  color: #242424;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0 1rem;
+  border-right: 1px solid #242424;
+}
+.navbar a:hover{
+  color: blue;
+  text-decoration: underline;
+}
+.navbar a:last-child  {
+  border-right: none;
+}
+
+a.router-link-active.router-link-exact-active{
+  color: blue;
+  font-weight: 600;
+}
