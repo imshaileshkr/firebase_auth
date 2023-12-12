@@ -10,7 +10,6 @@ onMounted(()=> {
   auth = getAuth()
   onAuthStateChanged(auth, (user)=> {
     if(user) {
-      console.log("wertyu",user);
       user_Details = {...user}
       isLoggedIn.value = true
     }
@@ -23,7 +22,6 @@ onMounted(()=> {
 })
 const handleSignOut = () => {
  signOut(auth).then(()=> {
-   console.log("Sign out successfully")
    router.push("/login")
  })
 }
